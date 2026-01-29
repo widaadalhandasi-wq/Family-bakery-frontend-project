@@ -1,0 +1,539 @@
+/* start global style*/
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+}
+
+section {
+    height: auto;
+    padding: 50px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+    color: #686868;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #8e7754;
+    transition: all 1s;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.clear-float {
+    clear: both;
+}
+
+
+/* end global style*/
+
+/* start nav*/
+nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+
+}
+
+nav figure {
+    width: 130px;
+    height: 70px;
+    float: left;
+}
+
+nav figure img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-links {
+    float: right;
+    padding: 10px;
+
+
+}
+
+.nav-links a:hover {
+    color: black
+}
+
+
+/* end nav*/
+
+/* start home*/
+.home {
+    background-image: url("../imges/welcom-pic.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.home header {
+    max-width: 700px;
+    margin: 300px auto;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.home .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.home header p {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.home header h1 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 34px;
+}
+
+/*buttons*/
+button {
+    font-size: 14px;
+    padding: 10px 17px;
+    margin: 30px 0px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    height: 45px;
+    transition: 0.3s;
+    margin-top: 30px;
+
+}
+
+
+.btn_l {
+    background-color: #8e7754;
+    color: white;
+    margin-right: 12px;
+    border: none;
+    
+}
+
+.btn_2 {
+    background: none;
+    color: white;
+    border-color: white;
+    border: 2px solid white;
+    margin-left: 12px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+
+
+}
+
+/* end home*/
+
+/* start who we are?*/
+.who {
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.who figure {
+    width: 48%;
+    height: 100%;
+    float: left;
+}
+
+.who figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.who .who-details {
+    width: 48%;
+    float: right;
+
+}
+
+.who-details h2 {
+    font-size: 32px;
+    color: black;
+}
+
+.who-details p {
+    margin: 30px 0;
+    color: #555;
+}
+
+/* end who*/
+/* start location*/
+.location {
+    background: #f8f8f8;
+    overflow: hidden;
+    /* لتجنب مشاكل الحاوية عند استخدام float */
+}
+
+.location-details {
+    width: 48%;
+    float: left;
+
+}
+
+.location h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.location p {
+    font-size: 17px;
+    margin: 30px 0;
+    color: #555;
+}
+
+.location figure {
+    width: 48%;
+    height: 100%;
+    float: right;
+
+}
+
+.location figure img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* end location*/
+/* start baking*/
+.backing {
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.baking-details h1 {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.baking-details p {
+    text-align: center;
+    color: #686868;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+
+.Baking .item {
+    padding: 0 10px;
+    width: 33%;
+    float: left;
+}
+
+.Baking .items img {
+
+    height: auto;
+    width: 100%;
+    margin-left: -5%;
+    /* توسيطها داخل الكرت */
+    margin-bottom: 15px;
+}
+
+.items h2 ,p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
+
+/* end baking*/
+
+/* start contact*/
+.contact {
+    background: #f8f8f8;
+    overflow: hidden;
+
+}
+
+.contact-details {
+    width: 48%;
+    float: left;
+    height: 100%;
+    margin-right: 4%;
+    /* مسافة بين النص والخريطة */
+
+}
+
+.contact-details h1 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 17px;
+    margin: 15px 0;
+    color: #555;
+
+}
+
+.contact-details ul li {
+    margin-top: 15px;
+    color: #555;
+}
+
+.map {
+    float: right;
+    width: 48%;
+    max-width: 600px;
+    /* الحد الأقصى للخريطة */
+    height: 500px;
+    /* ارتفاع ثابت للخريطة */
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    /* سيمتد داخل div */
+
+
+}
+
+/* end contact*/
+
+/* start about-us*/
+
+.about-us {
+    background-color: #403d38;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.about-details {
+    min-width: 100%;
+
+
+}
+
+.about-details h2 {
+    color: white;
+    width: 80%;
+    margin-bottom: 15px;
+    /* مسافة تحت العنوان */
+
+}
+
+.about-details p {
+
+    width: 100%;
+    color: #969696;
+    line-height: 1.8;
+    /* المسافة بين الأسطر */
+    margin-bottom: 20px;
+    /* مسافة بين الفقرات */
+}
+
+.about-details ul li {
+    margin-bottom: 10px;
+    /* مسافة بين العناصر */
+    line-height: 1.8;
+    /* المسافة بين الأسطر */
+    color: #969696;
+    border-bottom: 1px solid rgba(168, 164, 164, 0.2);
+
+}
+
+.about-details ul li:last-child {
+    border-bottom: none;
+}
+
+/* المربعات */
+.about-box1,
+.about-box2,
+.about-box3,
+.about-box4 {
+    float: left;
+    width: 21%;
+    margin-right: 2%;
+    padding-left: 50px;
+}
+
+.about-box4 {
+    margin-right: 0;
+
+}
+
+/* end about-us*/
+
+/* start footer*/
+footer {
+
+    background-color: #353330;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+
+}
+
+footer p {
+    color: #969696;
+    padding-bottom: 20px;
+}
+
+figure img {
+    padding-bottom: 20px;
+
+}
+
+.social-icons li {
+    width: 40px;
+    height: 40px;
+    background: #403d38;
+    color: #969696;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    /* لتوسيط الأيقونة عمودياً */
+    display: inline-block;
+    transition: all 0.3s;
+    font-size: 18px;
+}
+
+.social-icons ul li:nth-child(1):hover {
+    background: #1877f2;
+}
+
+.social-icons ul li:nth-child(2):hover {
+    background: #db4437;
+}
+
+.social-icons ul li:nth-child(3):hover {
+    background: #0077b5;
+}
+
+.social-icons ul li:nth-child(4):hover {
+    background: #1da1f2;
+}
+
+
+/* end footer*/
+
+/* start side-icon*/
+.side-icons {
+    position: fixed;
+    right: 0px;
+    /* جهة اليمين */
+    top: 200px;
+    /* وسط الصفحة عموديًا */
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 5;
+
+}
+
+.side-icons a {
+    width: 40px;
+    display: block;
+    z-index: 6;
+
+}
+
+.side-icons a:hover {
+    color: #0275d8;
+}
+
+/* end side-icon*/
+
+.up-arrow {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000;
+    padding: 12px;
+    background: rgba(212, 208, 208, 0.6);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.up-arrow:hover {
+    background-color: #353330;
+    color: white;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+
+    .who figure,
+    .who .who-details,
+    .location-details,
+    .location figure,
+    .contact-details,
+    .map,
+    .Baking .item {
+        float: none;
+        width: 100%;
+
+    }
+
+    .baking-details,
+    .items figure,
+    .about-box1,
+    .about-box2,
+    .about-box3,
+    .about-box4 {
+        width: 100%;
+
+    }
+
+
+    .who,.Baking{
+        background-color: #3f3c37;
+       
+
+    }
+
+    .location , .Contact{
+        background-color:#222;
+        
+
+    }
+    nav {
+        background-color:rgb(148, 145, 145)
+    }
+}
